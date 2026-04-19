@@ -1,0 +1,25 @@
+# Environments
+.env
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# SQLite Database
+*.db
+umkm.db
+*.sqlite3
+
+# Logs
+error_log.txt
+*.log
+
+# OS Generated
+.DS_Store
+Thumbs.db
