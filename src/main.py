@@ -25,9 +25,12 @@ from handlers import menu, katalog, keranjang, pesanan, ai_chat, admin
 load_dotenv()
 log_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'error_log.txt')
 logging.basicConfig(
-    filename=log_path,
     level=logging.ERROR,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(log_path),
+        logging.StreamHandler()
+    ]
 )
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
