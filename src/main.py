@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-GROQ_API_KEY = os.getenv("GRQO_AI")  # Match .env key name
+GROQ_API_KEY = os.getenv("GROQ_AI")  # Match .env key name
 
 if not TELEGRAM_TOKEN:
     print("❌ ERROR: TELEGRAM_TOKEN tidak ditemukan di .env")
